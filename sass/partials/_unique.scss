@@ -1,0 +1,31 @@
+/*********************************************/
+/* UNIQUE STYLES */
+/*********************************************/
+.container-fluid {
+	max-width: 1600px;	
+}
+
+.header {
+	background: url(../img/bg-header.jpg) no-repeat top center;
+	background-size: cover;
+}
+
+.content {
+	padding-bottom: 50px;
+}
+
+.aside {
+	background: $default-darker;
+}
+
+.bottom {
+	background: url(../img/bg-bottom.jpg) no-repeat top center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: $container-padding;
+}
+
+.footer {
+	background: $default;
+	padding: $container-padding;
+}

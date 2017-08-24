@@ -1,0 +1,21 @@
+/*********************************************/
+/* ICONS */
+/*********************************************/
+.icons {
+	
+	&__wrapper {
+		display: inline;
+	}
+	
+	.nav-resp-wrap-active &__wrapper {
+		clear: both;
+		display: block;
+	}
+
+	&__icon {
+		&--contact {
+			color: $brand-main;
+			font-size: 20px;
+		}
+	}
+}

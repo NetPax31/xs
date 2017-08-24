@@ -1,0 +1,53 @@
+/*********************************************/
+/* FEATURES */
+/*********************************************/
+.features {
+	padding: $container-padding;
+	
+	&__item {
+		border: 2px solid $default-darker;
+		margin: 20px;
+		padding: 20px;
+		position: relative;
+		text-align: center;
+		
+		&::before {
+			background: $brand-main;
+			color: #ffffff;
+			content: 'Feature';
+			left: 20px;
+			padding: 10px;
+			position: absolute;
+			top: -20px;
+		}
+	}
+	
+	&__title {
+		margin: 0 0 20px 0;
+		font-size: 20px;
+	}
+
+	&__content {
+		
+		font-size: 12px;
+		line-height: 1.7;
+		font-weight: 400;
+		margin: 0 0 20px 0;
+	}
+
+	&__link {
+		color: $brand-main;
+		font-weight: 700;
+		padding: 0 5px;	
+		
+		&:hover {
+			border-left: 2px solid $brand-main-lighter;
+			border-right: 2px solid $brand-main-lighter;
+			color: $brand-main;
+			padding: 0 5px;
+			-webkit-animation: expand 1s linear infinite;
+			animation: expand 1s linear infinite;			
+		}
+	}
+
+}

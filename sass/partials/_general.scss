@@ -1,0 +1,63 @@
+/*********************************************/
+/* GENERAL */
+/*********************************************/
+html, body {
+    height: 100%;
+    margin: 0px; 
+    padding: 0px;	
+}
+
+body { 
+	background: $default;
+	font-family: 'Roboto', sans-serif;
+}
+
+a , a:hover, a:focus, a:active {
+	text-decoration: none;
+}
+
+a  {
+	color: #000000;
+}
+
+a:hover, a:focus, a:active {
+	color: #000000;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.align {	
+	float: right;
+	
+	@media only screen and (max-width: 1200px) {
+		float: left;
+	}
+}
+
+.logo {
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: 20px center;	
+}
+
+.copy {
+	padding: 20px;
+}
+
+
+.row.no-gutter {
+	margin-left: 0;
+	margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+	padding-right: 0;
+	padding-left: 0;
+}

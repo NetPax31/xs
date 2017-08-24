@@ -1,0 +1,51 @@
+/*********************************************/
+/* GALLERY */
+/*********************************************/
+.gallery {
+	
+	&__item-img {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		height: 100%;
+		overflow: hidden;
+		padding-bottom: 100%;
+		position: relative;		
+		width: 100%;
+		
+		@include single-transition(all, 500ms, ease);
+		
+		&:hover {
+			background-size: 110% 110%;
+			z-index: 4;
+			@include single-box-shadow(10px, 10px, 10px, 0px, rgba(0,0,0,0.5));
+		}
+	}
+	
+	&__item-desc {	
+		background: $default;
+		height: 100%;
+		overflow: hidden;
+		padding-bottom: 100%;
+		position: relative;
+	}
+	
+	&__title {
+		bottom: 20px;
+		color: $default;
+		font-size: 16px;
+		font-weight: 700;
+		left: 20px;
+		position: absolute;
+	}
+	
+	&__desc {
+		color: $brand-main;
+		padding: 20px;
+		position: absolute;
+		text-align: center;		
+		top: 50%;
+		-webkit-transform: translate(0%, -50%);
+		transform: translateY(-50%);
+	}
+}

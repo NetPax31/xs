@@ -1,0 +1,9 @@
+$default            : #ffffff;
+$default-lighter    : lighten($default, 20%);
+$default-darker     : darken($default, 5.88);
+
+$brand-main         : #33ccff;
+$brand-main-lighter : lighten($brand-main, 20%);
+$brand-main-darker  : darken($brand-main, 50%);
+
+$container-padding: 50px 0;

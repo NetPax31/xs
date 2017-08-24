@@ -1,0 +1,66 @@
+/*********************************************/
+/* ARTICLES */
+/*********************************************/
+.article {
+	margin-bottom: 50px;
+	
+	&__header {
+		border-bottom: 2px solid $default-darker;
+		margin-bottom: 30px;
+	}
+	
+	&__title {		
+		margin: 30px 0 30px 0;
+	}
+	
+	&__feature-img {		 
+	}
+	
+	&__meta {		
+		border-left: 4px solid $brand-main;
+		border-right: 4px solid $default-darker;
+		font-size: 12px;
+		margin: 10px 0 20px 0;
+		padding: 10px;
+		
+		& > .article__meta-item {
+			margin-right: 5px;
+		}
+		
+		& > .article__meta-item:last-child {
+			margin-right: 0px;
+		}
+	}
+	
+	&__author{
+		
+		&::before {
+			font-family: FontAwesome;
+			color: $brand-main;
+			content: '\f2be';
+			margin-right: 5px;
+		}
+	}
+	
+	&__date {
+	
+		&::before {
+			font-family: FontAwesome;
+			color: $brand-main;
+			content: '\f073';
+			margin-right: 5px;
+		}
+	}
+	
+	&__cats {
+		float: right;
+		font-weight: 700;
+	}
+	
+	& p {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		margin-bottom: 28px;
+	}
+}
